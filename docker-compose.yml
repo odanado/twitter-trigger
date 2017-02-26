@@ -1,0 +1,10 @@
+version: "2"
+services:
+    twitter-trigger:
+        build: .
+        ports:
+            - 80:80
+        volumes:
+            - ./:/src
+        entrypoint:
+            - ./server.py
